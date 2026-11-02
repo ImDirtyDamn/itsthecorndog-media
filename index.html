@@ -116,6 +116,16 @@ footer{padding:2rem 4vw;border-top:1px solid var(--line);color:var(--muted);font
 .nocookie .panel p{color:#cfe8cf;margin:.2rem 0}
 @media(max-width:600px){.nocookie{left:.6rem;right:.6rem;bottom:.6rem;width:auto;padding:1rem;font-size:.9rem}.nocookie.up{top:auto;bottom:.6rem;opacity:0;visibility:hidden;transform:translateY(120%)}.nocookie .fine{font-size:.74rem}}
 @media (prefers-reduced-motion:reduce){.nocookie{transition:none}}
+
+/* silly band */
+.silly{position:relative;padding:5.5rem 0 4.5rem;text-align:center;overflow:hidden;background:radial-gradient(60% 80% at 50% 0%,#ff5a1f22,transparent 70%),var(--ink)}
+.silly .eyebrow{margin-bottom:1rem}
+.silly h2{font-size:clamp(2.4rem,7.4vw,6rem);line-height:.95;margin:0 auto 1rem;max-width:16ch}
+.silly h2 .m{color:var(--mustard);display:inline-block;transform:rotate(-3deg);text-shadow:4px 4px 0 var(--ketchup)}
+.silly .plot{font-family:var(--serif);font-style:italic;color:var(--mustard2);font-size:clamp(1.5rem,3.6vw,2.6rem);margin:0 0 1rem;line-height:1.15}
+.silly .plot::before,.silly .plot::after{content:"🌭";font-style:normal;font-size:.7em;margin:0 .5rem;vertical-align:.12em}
+.silly .why{color:var(--muted);max-width:38rem;margin:0 auto;font-size:1.08rem}
+@media(max-width:600px){.silly{padding:4.2rem 0 3.4rem}.silly .plot::before,.silly .plot::after{display:none}}
 </style>
 </head>
 <body>
@@ -153,6 +163,15 @@ footer{padding:2rem 4vw;border-top:1px solid var(--line);color:var(--muted);font
 </header>
 
 <div class="ticker" aria-hidden="true"><div><span>Orientation films</span><span>Instructional shorts</span><span>SOP documents</span><span>New-hire packets</span><span>Safety refreshers</span><span>Department explainers</span><span>Websites</span><span>KPI dashboards</span><span>Custom ERP tools</span><span>Orientation films</span><span>Instructional shorts</span><span>SOP documents</span><span>New-hire packets</span><span>Safety refreshers</span><span>Department explainers</span><span>Websites</span><span>KPI dashboards</span><span>Custom ERP tools</span></div></div>
+
+<section class="silly" id="silly" aria-labelledby="silly-h">
+  <div class="wrap">
+    <p class="eyebrow">A note from the studio</p>
+    <h2 id="silly-h">We're kinda <span class="m">silly</span> and we know it.</h2>
+    <p class="plot">Silly without losing the plot.</p>
+    <p class="why">The jokes never get in the way of the safety or the facts. Those we take very seriously.</p>
+  </div>
+</section>
 
 <main>
 <section class="reel" id="reel">
